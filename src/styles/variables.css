@@ -1,0 +1,27 @@
+:root {
+  /* Palette: change these to re-theme the whole site */
+  --maroon: #6b0f1a;
+  --maroon-deep: #4a0a12;
+  --gold: #c9a24b;
+  --gold-light: #e8d29a;
+  --ivory: #fbf5e6;
+  --cream: #f3e8cb;
+  --ink: #3b1a1a;
+
+  --font-script: 'Great Vibes', 'Brush Script MT', cursive;
+  --font-body: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Fluid type */
+  --fs-body: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  --fs-title: clamp(2.1rem, 1.5rem + 3.5vw, 2.9rem);
+  --fs-names: clamp(2.9rem, 2rem + 6vw, 4.2rem);
+
+  /* Fluid spacing */
+  --space-section: clamp(3rem, 2rem + 6vw, 4.5rem);
+  --space-side: clamp(1.1rem, 0.6rem + 3vw, 1.75rem);
+
+  --radius: 1.25rem;
+  --shadow: 0 8px 24px rgba(74, 10, 18, 0.14);
+  --border-gold: 1px solid rgba(201, 162, 75, 0.7);
+  --column: 30rem; /* ~480px phone-style column */
+}
