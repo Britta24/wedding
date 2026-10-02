@@ -42,5 +42,5 @@ export const weddingConfig = {
   rsvp: { whatsappNumber: "916374080772", deadline: "2026-10-18" }, // digits only, with country code
   music: { src: "/music/wedding.mp3", autoplayOnOpen: false }, // set autoplayOnOpen: true to start music when the envelope is tapped
   hashtag: "#JislinWedsBritta",
-  siteUrl: "https://your-site.vercel.app" // TODO: update after deploy
+  siteUrl: "https://jislinbrittawedding.vercel.app/" // TODO: update after deploy
 };
