@@ -9,7 +9,7 @@ export default function Contact() {
       <Divider />
       <Reveal>
         <h2 id="contact-title" className="section__title script">Need help finding us?</h2>
-        <p className="section__lead">Call either family and we will guide you.</p>
+        <p className="section__lead">Call us to find us </p>
         <ul className="contacts">
           {cfg.contacts.map((c) => (
             <li key={c.label} className="card contacts__item">

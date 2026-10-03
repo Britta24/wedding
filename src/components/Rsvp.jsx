@@ -39,7 +39,7 @@ export default function Rsvp() {
       <Reveal>
         <h2 id="rsvp-title" className="section__title script">Will you join us?</h2>
         <p className="section__lead">
-          Please reply by {formatDate(cfg.rsvp.deadline, { day: 'numeric', month: 'long' })}. Your reply opens in WhatsApp.
+          Save your seat at our celebration! Reply on or before {formatDate(cfg.rsvp.deadline, { day: 'numeric', month: 'long' })}, it takes just one tap on WhatsApp.
         </p>
         <form className="card form" onSubmit={submit} noValidate>
           <label className="field">
