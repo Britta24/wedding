@@ -121,7 +121,7 @@ function ThanksPopup({ onClose }) {
         </h3>
 
         <p style={{ margin: '0 0 1.1rem', fontSize: '1.05rem', lineHeight: 1.6 }}>
-          Thanks for seeing the invitation patiently.
+          Thanks you for taking the time to go through the inviation patiently.
         </p>
 
         <span
