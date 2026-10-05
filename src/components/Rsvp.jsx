@@ -5,7 +5,7 @@ import { formatDate } from '../utils/calendar';
 import Reveal from './Reveal';
 import Divider from './Divider';
 
-const INITIAL = { name: '', guests: '1', attending: 'yes', message: '' };
+const INITIAL = { name: '', attending: 'yes', message: '' };
 
 export default function Rsvp() {
   const [form, setForm] = useState(INITIAL);
@@ -16,17 +16,13 @@ export default function Rsvp() {
     e.preventDefault();
     const next = {};
     if (form.name.trim().length < 2) next.name = 'Please enter your name.';
-    const guests = Number(form.guests);
-    if (form.attending === 'yes' && (!Number.isInteger(guests) || guests < 1 || guests > 20)) {
-      next.guests = 'Enter a number of guests between 1 and 20.';
-    }
     setErrors(next);
     if (Object.keys(next).length) return;
 
     const lines = [
       `Hello! This is ${form.name.trim()}.`,
       form.attending === 'yes'
-        ? `I will attend the wedding with ${guests} guest${guests > 1 ? 's' : ''} in total.`
+        ? 'I will attend the wedding.'
         : 'Sadly, I will not be able to attend, but I send my blessings.'
     ];
     if (form.message.trim()) lines.push(`Message: ${form.message.trim()}`);
@@ -59,14 +55,6 @@ export default function Rsvp() {
               ))}
             </div>
           </fieldset>
-
-          {form.attending === 'yes' && (
-            <label className="field">
-              <span>Number of guests (including you)</span>
-              <input type="number" inputMode="numeric" min="1" max="20" value={form.guests} onChange={set('guests')} aria-invalid={!!errors.guests} aria-describedby="err-guests" />
-              <small id="err-guests" className="field__error" role="alert">{errors.guests}</small>
-            </label>
-          )}
 
           <label className="field">
             <span>Message for the couple (optional)</span>
