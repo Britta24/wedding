@@ -92,7 +92,7 @@ export default function Hero() {
             textShadow: '0 0 18px rgba(233, 207, 155, 0.25)'
           }}
         >
-          to join us on the beautiful day of us
+          To join us on our beautiful day 
         </motion.span>
 
         <span
