@@ -32,7 +32,10 @@ export default function Hero() {
         <span>{cfg.bride.name}</span>
       </h1>
       <p className="hero__date">{date}</p>
-      <p className="hero__city">{cfg.venue.city}</p>
+      {/* "\n" in venue.city breaks the line; pre-line + center keeps both lines centered */}
+      <p className="hero__city" style={{ whiteSpace: 'pre-line', textAlign: 'center' }}>
+        {cfg.venue.city}
+      </p>
 
       {/* Scroll prompt: fully inline-styled so it never gets squeezed by other CSS */}
       <motion.a
